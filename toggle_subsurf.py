@@ -4,10 +4,10 @@ bl_info = {
     "name": "Subsurf Toggler",
     "author": "Stefan Heinemann",
     "blender": (2, 77, 0),
-    "version": (0, 0, 2),
+    "version": (0, 0, 4),
     "location": "Key Bindings",
     "description": "Provide option to bind a key so it togglers the subsurf",
-    "category": "User Interface"
+    "category": "Object"
 }
 
 
@@ -27,19 +27,6 @@ class ToggleSubsurf(bpy.types.Operator):
                 mod.show_viewport = not mod.show_viewport
 
         return {'FINISHED'}
-
-
-addon_keymaps = []
-
-
-def register_keymaps():
-    wm = bpy.context.window_manager
-    km = wm.keyconfigs.addon.keymaps.new(
-        name = "Object", space_type='EMPTY')
-    kmi = km.keymap_items.new(
-        ToggleSubsurf.bl_idname)
-    kmi.properties.name = "Subsurf Toggler"
-    addon_keymaps.append(km)
 
 
 def register():
