@@ -6,14 +6,15 @@ bl_info = {
     "blender": (2, 77, 0),
     "version": (0, 0, 4),
     "location": "Key Bindings",
-    "description": "Provide option to bind a key so it togglers the subsurf",
+    "description": "Provides an operator for keybindings to toggle the "
+                   "subsurf modifiers",
     "category": "Object"
 }
 
 
 class ToggleSubsurf(bpy.types.Operator):
     bl_idname = 'object.toggle_subsurf'
-    bl_label = "Subsurf Toggler"
+    bl_label = "Subsurf toggler"
 
     def cur_object(self):
         return bpy.context.scene.objects.active

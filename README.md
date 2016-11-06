@@ -1,16 +1,25 @@
-# Blender Subsurf Toggler Addon
+# Blender Helper Operators
 
-This addon provides the possibility to make a keybinding that toggles the
-subsurf modifier of the currently active object. This is very useful when
-modelling a mesh with subsurf modifier on, but sometimes need to have a look
-without the modifier.
+Some operators that help while working with Blender.
 
 
-## Keybinding
+## Subsurf Toggler
 
-![Keybinding](https://raw.githubusercontent.com/schtibe/subsurf_toggler/master/assets/keybinding.png)
+This addon provides an operator to toggle the subsurf modifier of current object.
+Very useful when modelling.
+
+### Keybinding
+
+![Keybinding](https://raw.githubusercontent.com/schtibe/subsurf_toggler/master/assets/subsurf_keybinding.png)
 
 
-## Demo
+### Demo
 
-![Demo](https://raw.githubusercontent.com/schtibe/subsurf_toggler/master/assets/animation.gif)
+![Demo](https://raw.githubusercontent.com/schtibe/subsurf_toggler/master/assets/subsurf_animation.gif)
+
+
+## UV Sync Toggler
+
+Operator to toggle the "Keep UV and edit mode selection in sync"
+
+![Keybinding](https://raw.githubusercontent.com/schtibe/subsurf_toggler/master/assets/uv_sync_keybinding.png)
